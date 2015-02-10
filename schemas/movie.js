@@ -2,18 +2,17 @@ var mongoose = require('mongoose');
 var MovieSchema = new mongoose.Schema({
     doctor:String,
     title:String,
-    doctor:String,
     language:String,
     dec:String,
     flash:String,
     poster:String,
     year:Number,
+    country:String,
     meta: {
       createAt: {
           type:Date,
           default:Date.now()
       },
-
       updateAt: {
         type:Date,
         default:Date.now()
@@ -28,18 +27,21 @@ MovieSchema.pre('save',function(next){
     }else{
         this.meta.updateAt =  Date.now();
     }
-    next()
+    next();
 });
 MovieSchema.statics = {
-    fetch:function(){
+    fetch:function(cb){
         return this
             .find({})
             .sort('meta.updateAt')
             .exec(cb)
     },
     findById:function(id,cb){
+        console.log("find"+id);
         return this
             .findOne({_id:id})
             .exec(cb)
     }
 }
+
+module.exports = MovieSchema

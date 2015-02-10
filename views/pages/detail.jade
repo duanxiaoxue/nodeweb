@@ -20,6 +20,8 @@ block content
             dd=movie.year
             dt 简洁
             dd=movie.dec
+            dt 更新时间
+            dd=moment(movie.meta.UpdateAt).format('MM/DD/YYYY')
 
 
 

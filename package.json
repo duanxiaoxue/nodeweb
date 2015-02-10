@@ -1,0 +1,30 @@
+{
+  "name": "nodeweb",
+  "version": "0.0.0",
+  "description": "learn nodejs web",
+  "main": "app.js",
+  "dependencies": {
+    "bson": "~0.2.18",
+    "body-parser": "~1.11.0",
+    "express": "~4.11.2",
+    "moment": "~2.9.0",
+    "formidable": "~1.0.16",
+    "mongodb": "~1.4.30",
+    "mongoose": "~3.8.23",
+    "underscore": "~1.7.0",
+    "jade": "~1.9.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "no"
+  },
+  "keywords": [
+    "nodejs"
+  ],
+  "author": "xiaobao",
+  "license": "ISC"
+}

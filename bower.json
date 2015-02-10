@@ -1,0 +1,26 @@
+{
+  "name": "nodeweb",
+  "version": "1.0",
+  "homepage": "xiaobao.com",
+  "authors": [
+    "xiaobao"
+  ],
+  "description": "node_web   learn 1.0",
+  "main": "app.js",
+  "keywords": [
+    "learn"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/libs",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.2"
+  }
+}
